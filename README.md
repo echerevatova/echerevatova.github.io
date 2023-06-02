@@ -1,2 +1,2 @@
 # Череватова Екатерина
-[сайт АВЕ МЁД](https://echerevatova.github.io/project/main.html"сайт")
+[сайт АВЕ МЁД](https://echerevatova.github.io/project/main.html/)
