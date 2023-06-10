@@ -1,0 +1,108 @@
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #32272D;
+  font-weight: 700;
+  text-align: center;
+}
+
+a, button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  color: #32272D;
+  font-weight: 600;
+  text-align: center;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+p, span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  color: #32272D;
+  font-weight: 600;
+  text-align: center;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+button {
+  background-color: #C5DE65;
+  border: none;
+  border-radius: 7px;
+  color: #32272D;
+  padding: 5px 100px;
+  position: absolute;
+  z-index: 900;
+  -webkit-box-shadow: 3px 3px 7px 0px #32272D;
+          box-shadow: 3px 3px 7px 0px #32272D;
+}
+
+img {
+  width: 100%;
+  -webkit-box-shadow: 3px 3px 7px 0px #32272D;
+          box-shadow: 3px 3px 7px 0px #32272D;
+}
+
+.menu {
+  background-color: #C5DE65;
+  height: 80px;
+  width: 100%;
+  text-align: right;
+}
+.menu .img {
+  width: 300px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.shad {
+  height: 650px;
+  width: 100%;
+  background-color: #32272D;
+  opacity: 0.5;
+  position: absolute;
+  z-index: 2;
+}
+
+.bg {
+  position: absolute;
+  z-index: 1;
+  height: 650px;
+  width: 100%;
+  background: url("../img/portrait-of-a-young-worker-in-a-hard-hat-at-a-large-metalworking-plant.jpg") bottom center no-repeat;
+  background-size: cover;
+}
+
+.aboutus {
+  border: 2px solid red;
+  margin: 40px 0px;
+  height: 600px;
+  width: 100%;
+}
+.aboutus h1 {
+  position: absolute;
+  z-index: 3;
+  color: #EEEEEE;
+  text-shadow: 0 0 5px #32272D;
+}
+.aboutus button {
+  margin-top: 400px;
+}
+
+.metall {
+  margin-bottom: 40px;
+}
+
+.metall-works {
+  margin-top: 40px;
+}
+.metall-works .works {
+  margin-top: -60px;
+  padding-left: 75px;
+}
+.metall-works p {
+  text-align: left;
+  line-height: 27px;
+}
