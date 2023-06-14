@@ -138,3 +138,9 @@ background-size: cover;
 	box-shadow: 3px 3px 7px 0px $fontColor;
 	}
 }
+
+@media (min-width: 1919px) {
+	.bg, .bg2 {
+	height: 1080px;
+	}
+}
