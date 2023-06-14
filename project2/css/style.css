@@ -154,11 +154,11 @@ img {
           box-shadow: 3px 3px 7px 0px #32272D;
 }
 
-@media (min-width: 1919px) {
-  .bg, .bg2 {
+@media (min-width: 500px) {
+  .aboutus2 {
     height: 1000px;
   }
-  .aboutus {
+  .bg, .bg2 {
     height: 1000px;
   }
   .contacts2 {
@@ -167,7 +167,10 @@ img {
   .container {
     --bs-gutter-x: 1rem;
     --bs-gutter-y: 0;
+    width: 100%;
     padding-right: calc(var(--bs-gutter-x) * 0.1);
     padding-left: calc(var(--bs-gutter-x) * 0.1);
+    margin-right: auto;
+    margin-left: auto;
   }
 }
