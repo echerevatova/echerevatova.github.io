@@ -142,20 +142,23 @@ background-size: cover;
 	}
 }
 
-@media (min-width: 1919px) {
+@media (min-width: 500px) {
+	.aboutus2 {
+	height: 1000px;
+	}
 	.bg, .bg2 {
 	height: 1000px;
 	}
-	.aboutus {
-	height: 1000px;
-	}
 	.contacts2 {
-		height: 845px;
+	height: 845px;
 	}
 	.container {
 	--bs-gutter-x: 1rem;
 	--bs-gutter-y: 0;
+	width: 100%;
 	padding-right: calc(var(--bs-gutter-x) * 0.1);
 	padding-left: calc(var(--bs-gutter-x) * 0.1);
-}
+	margin-right: auto;
+	margin-left: auto;
+	}
 }
