@@ -68,9 +68,9 @@ button {
 	background-size: cover;
 	.aboutus {
 	margin: 60px 0px;
-	height: 700px;
 	width: 100%;
 	h1{
+	margin-top: 300px;
 	text-align: left;
 	color: #EEEEEE;
 	text-shadow: 0 0 5px #32272D;
@@ -142,7 +142,7 @@ background-size: cover;
 	}
 }
 
-@media (min-width: 500px) {
+@media (min-width: 1600px) {
 	.aboutus2 {
 	height: 1000px;
 	}
