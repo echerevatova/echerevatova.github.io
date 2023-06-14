@@ -99,7 +99,7 @@ height: 700px;
 background: url("../img/bg20.jpg") bottom center no-repeat;
 background-size: cover;
 	h1{
-	margin-top: 60px;
+	margin: 60px 0 60px 0;
 	line-height: 0.5;
 	margin-top: 60px;
 	text-align: center;
@@ -152,9 +152,12 @@ background-size: cover;
 	.bg, .bg2 {
 	height: 1000px;
 	}
-
+.bg2 {
+	h1{
+	margin: 60px 0 0 0;
+	}
+}
 	.contacts {
-	margin-top: 0px;
 	height: 910px;
 }
 	.container {
