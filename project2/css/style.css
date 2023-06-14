@@ -102,19 +102,15 @@ img {
   background: url("../img/bg20.jpg") bottom center no-repeat;
   background-size: cover;
 }
-
-.contacts {
+.bg2 h1 {
   margin-top: 60px;
-  width: 100%;
-}
-.contacts h1 {
   line-height: 0.5;
   margin-top: 60px;
   text-align: center;
   color: #EEEEEE;
   text-shadow: 0 0 5px #32272D;
 }
-.contacts p {
+.bg2 p {
   text-align: left;
   color: #EEEEEE;
   text-shadow: 0 0 5px #32272D;
@@ -155,14 +151,20 @@ img {
 }
 
 @media (min-width: 1600px) {
-  .aboutus2 {
+  .bg .aboutus {
+    margin: 60px 0;
     height: 1000px;
+    width: 100%;
+  }
+  .bg .aboutus h1 {
+    margin-top: 0;
   }
   .bg, .bg2 {
     height: 1000px;
   }
-  .contacts2 {
-    height: 845px;
+  .contacts {
+    margin-top: 0px;
+    height: 910px;
   }
   .container {
     --bs-gutter-x: 1rem;
