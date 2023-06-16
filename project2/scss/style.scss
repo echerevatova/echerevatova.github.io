@@ -19,6 +19,7 @@ $Montserrat:'Montserrat', sans-serif;
 	font-weight: 600;
 	text-align: center;
 	font-weight: $weight;
+	line-height: 40px;
 }
 
 // Общие настройки
@@ -61,7 +62,7 @@ button {
 }
 
 .bg {
-	margin: -60px 0 60px 0;
+	margin: -60px 0 0px 0;
 	height: 700px;
 	width: 100%;
 	background: url("../img/bg10.jpg") top center no-repeat;
@@ -70,7 +71,12 @@ button {
 	margin: 60px 0px;
 	width: 100%;
 	h1{
-	margin-top: 300px;
+	margin-top: 60px;
+	text-align: left;
+	color: #EEEEEE;
+	text-shadow: 0 0 5px #32272D;
+	}
+	p{
 	text-align: left;
 	color: #EEEEEE;
 	text-shadow: 0 0 5px #32272D;
@@ -79,18 +85,18 @@ button {
 }
 
 .metall {
-	margin-bottom: 60px;
+	margin: 60px 0;
 }
 .metall-works {
 	margin-top: 60px;
 	.works {
-		margin-top: -60px;
 		padding-left: 130px;
 	}
 	p {
 		text-align: left;
-		line-height: 27px;
+		line-height: 28px;
 	}
+	button {margin-top: 15px;}
 }
 .bg2 {
 margin-top: 80px;
@@ -118,8 +124,12 @@ background-size: cover;
 	text-align: left;
 	box-shadow: 3px 3px 7px 0px $fontColor;
 	border-radius: 10px;
-	.main-form-input2 {
+	.txtarea {
 	height: 100px;
+	width: 100%;
+	box-shadow: 3px 3px 7px 0px $fontColor;
+	border: 1px solid $fontColor;
+	margin-bottom: 20px
 	}
 	input{
 	margin: 20px 0;
@@ -130,12 +140,16 @@ background-size: cover;
 	box-shadow: 3px 3px 7px 0px $fontColor;
 	}
 	button{
-	@include FontSettings (600);
+	@include FontSettings (500);
 	background-color: $fontColor;
 	color: #EEEEEE;
-	padding: 5px 21px;
+	padding: 5px 29px;
 	box-shadow: 3px 3px 7px 0px $fontColor;
 	}
+}
+
+.map{
+box-shadow: 3px 3px 7px 0px $fontColor;
 }
 
 @media (min-width: 1600px) {
@@ -160,13 +174,4 @@ background-size: cover;
 	.contacts {
 	height: 910px;
 }
-	.container {
-	--bs-gutter-x: 1rem;
-	--bs-gutter-y: 0;
-	width: 100%;
-	padding-right: calc(var(--bs-gutter-x) * 0.1);
-	padding-left: calc(var(--bs-gutter-x) * 0.1);
-	margin-right: auto;
-	margin-left: auto;
-	}
 }
