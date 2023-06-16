@@ -14,6 +14,7 @@ a {
   font-weight: 600;
   text-align: center;
   font-weight: 700;
+  line-height: 40px;
   text-decoration: none;
 }
 
@@ -24,6 +25,7 @@ p, span, label {
   font-weight: 600;
   text-align: center;
   font-weight: 600;
+  line-height: 40px;
   text-decoration: none;
 }
 
@@ -34,6 +36,7 @@ button {
   font-weight: 600;
   text-align: center;
   font-weight: 600;
+  line-height: 40px;
   background-color: #C5DE65;
   border: none;
   border-radius: 7px;
@@ -62,7 +65,7 @@ img {
 }
 
 .bg {
-  margin: -60px 0 60px 0;
+  margin: -60px 0 0px 0;
   height: 700px;
   width: 100%;
   background: url("../img/bg10.jpg") top center no-repeat;
@@ -73,26 +76,33 @@ img {
   width: 100%;
 }
 .bg .aboutus h1 {
-  margin-top: 300px;
+  margin-top: 60px;
+  text-align: left;
+  color: #EEEEEE;
+  text-shadow: 0 0 5px #32272D;
+}
+.bg .aboutus p {
   text-align: left;
   color: #EEEEEE;
   text-shadow: 0 0 5px #32272D;
 }
 
 .metall {
-  margin-bottom: 60px;
+  margin: 60px 0;
 }
 
 .metall-works {
   margin-top: 60px;
 }
 .metall-works .works {
-  margin-top: -60px;
   padding-left: 130px;
 }
 .metall-works p {
   text-align: left;
-  line-height: 27px;
+  line-height: 28px;
+}
+.metall-works button {
+  margin-top: 15px;
 }
 
 .bg2 {
@@ -124,8 +134,13 @@ img {
           box-shadow: 3px 3px 7px 0px #32272D;
   border-radius: 10px;
 }
-.main-form .main-form-input2 {
+.main-form .txtarea {
   height: 100px;
+  width: 100%;
+  -webkit-box-shadow: 3px 3px 7px 0px #32272D;
+          box-shadow: 3px 3px 7px 0px #32272D;
+  border: 1px solid #32272D;
+  margin-bottom: 20px;
 }
 .main-form input {
   margin: 20px 0;
@@ -142,10 +157,16 @@ img {
   color: #32272D;
   font-weight: 600;
   text-align: center;
-  font-weight: 600;
+  font-weight: 500;
+  line-height: 40px;
   background-color: #32272D;
   color: #EEEEEE;
-  padding: 5px 21px;
+  padding: 5px 29px;
+  -webkit-box-shadow: 3px 3px 7px 0px #32272D;
+          box-shadow: 3px 3px 7px 0px #32272D;
+}
+
+.map {
   -webkit-box-shadow: 3px 3px 7px 0px #32272D;
           box-shadow: 3px 3px 7px 0px #32272D;
 }
@@ -167,14 +188,5 @@ img {
   }
   .contacts {
     height: 910px;
-  }
-  .container {
-    --bs-gutter-x: 1rem;
-    --bs-gutter-y: 0;
-    width: 100%;
-    padding-right: calc(var(--bs-gutter-x) * 0.1);
-    padding-left: calc(var(--bs-gutter-x) * 0.1);
-    margin-right: auto;
-    margin-left: auto;
   }
 }
