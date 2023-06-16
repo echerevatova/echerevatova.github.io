@@ -20,11 +20,11 @@
 				<div class="col-2 offset-2">
 					<a>о нас</a>
 				</div>
-				<div class="col-3">
-					<a>наши работы</a>
-				</div>
 				<div class="col-2">
 					<a>контакты</a>
+				</div>
+				<div class="col-3">
+					<a>схема проезда</a>
 				</div>
 			</div>
 		</div>
@@ -33,8 +33,13 @@
 	<div class="bg">
 		<div class="container">
 			<div class="row align-items-center aboutus">
-				<div class="col-3">
+				<div class="col-10">
 					<h1>о нас</h1>
+					<p>Компания ММ ПРО ГРУПП занимается производством металлоизделий и мебельных изделий по индивидуальным заказам, выполняем работы по металлообработке.<br>
+Наше производство полностью соответствует требованиям государственных стандартов и нормативов.<br>
+Наша продукция является надежной и долговечной в эксплуатации.<br>
+Заказы выполняются в срок!<br>
+Для предварительной оценки стоимости изготовления деталей и работ – звоните!</p>
 					<button>связаться</button>
 				</div>
 			</div>
@@ -75,7 +80,7 @@
 				<h1>мебель</h1>
 			</div>
 			<div class="row align-items-center metall-works">
-				<div class="col-4"><img src="img\high-angle-people-using-sandpaper.jpg"></div>
+				<div class="col-4"><img src="img\wooden-plant-stand-with-a-cactus-on-the-side.jpg"></div>
 				<div class="col-8 works">
 						<p>изготовление мебели по индивидуальному заказу</p>
 						<p>принимаем заказы на серийные работы</p>
@@ -101,49 +106,61 @@
 						<p>Если у Вас остались вопросы, мы с радостью ответим на них по телефону <br>8-926-000-00-00. Также Вы можете оставить заявку на сайте и наш менеджер свяжется с Вами.</p>
 					</div>
 					<div class="col-4 offset-1">
-						<div class="main-form">
-						
-								<input class="main-form-input" type="text">
-								<input class="main-form-input" type="text">
-								<input class="main-form-input" type="text">
-								<input class="main-form-input2" type="text">
+						<div class="main-form" id="inline">
+							<form action="send.php" method="post">
+								<input class="txt" name="username" type="text" placeholder="Ваше имя">
+								<input class="txt" name="userphone" type="text" placeholder="Ваш телефон">  
+								<textarea class="txtarea" name="question" placeholder="Ваше сообщение:"></textarea>
 								<button type="submit">оставить заявку</button>
-							
-						</div>
+							</form>
+						</div>	
 					</div>
 				</div>
+				</div>
 			</div>
-	</div>	
 
+	<!-- Схема проезда -->
+	<div class="metall">
+		<div class="container">
+			<div class="row align-items-center">
+				<h1>схема проезда</h1>
+			</div>
+			<div class="row align-items-center metall-works">
+				<div class="col-7">
+						<p>Адрес: г. Зеленоград ул. Радио 23с9 <br>
+						Телефоны:<br> 
+						+79854434948 Андрей<br>
+						+79264049484 Кирилл<br>
+						E-mail:  mmprogrupp@gmail.com   
+						</p>
+				</div>
+				<div class="col-5 map">
+					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A30e92330c51b28fd64313ec6c61414eaed90d087a16cf40429e25b6a257279a8&amp;width=500&amp;height=500&amp;lang=ru_RU&amp;scroll=false"></script>
+				</div>
+				<div class="col-4"></div>
+				
+			</div>
+		</div>
+	</div>
 
+<!-- Подвал -->
+<div class="menu">
+		<div class="container">
+			<div class="row align-items-center menu">
+				<div class="col-3">
+					<img class="img" src="img\logohead0.png" alt="ММ ПРО ГРУПП">
+				</div>
+				<div class="col-2 offset-5">
+					<a>mmprogrupp@gmail.com</a>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 
 
 <!-- Библиотеки -->
-<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-<!-- Подключаем стили Slick Slider -->
-<link rel="stylesheet" href="slick/slick.css" class="src">
-<link rel="stylesheet" href="slick/slick-theme.css" class="src">
-<!-- Подключаем js Slick Slider -->
-<script src="slick/slick.min.js"></script>
-<!-- Инициализируем Slick Slider -->
-<script>
-	$(document).ready(function(){
-      $('.gallery-slider').slick({
-		infinite: true,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		prevArrow: '<button class="arrow prev"></button>',
-		nextArrow: '<button class="arrow next"></button>',
-		autoplay: true,
-  		autoplaySpeed: 1500,
-		speed: 500,
-		fade: true,
-      });
-    });
-</script>
-
 
 </body>
 
