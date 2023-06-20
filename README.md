@@ -1,8 +1,8 @@
 # Череватова Екатерина
 
-[сайт "ММ ПРО ГРУПП"](https://echerevatova.github.io/project2/main.html)
+[сайт "ММ ПРО ГРУПП"](https://echerevatova.github.io/lesson/main.html)
 
-[проект "ММ ПРО ГРУПП"](https://github.com/echerevatova/echerevatova.github.io/tree/b28fb9ab0ba9d141b98dcedbe1183fae3cb54f68/project2)
+[проект "ММ ПРО ГРУПП"](https://github.com/echerevatova/echerevatova.github.io/tree/main/lesson)
 
 [сайт "аве мёд"](https://echerevatova.github.io/project/main.html)
 
