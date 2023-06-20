@@ -2,308 +2,151 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Валдайский мёд</title>
+	<title>ММ ПРО ГРУПП</title>
   <link rel="stylesheet" href="css\bootstrap.css">
   <link rel="stylesheet" href="css\style.css">
   <link rel="stylesheet" href="css\fonts.css">
-  <link rel="icon" type="image/png" href="img\icon.png">
+  <link rel="icon" type="image/png" href="img\лого.svg">
 </head>
 
 <body>
-<!-- Шапка меню ! -->
-		<div class="row row-cols-5 align-items-end menu">
-				
-			<div class="col-xl col-sm col logo">
-				<img class="img" src="img\Ресурс 56.png" alt="АВЕ МЁД">
-			</div>
-					
-			<div class="col-xl col-sm col">
-			  	<a href="#main">главная</a>
-			</div>
-					
-			<div class="col-xl col-sm col">
-				<a href="#aboutus">о нас</a>
-			</div>
-					
-			<!-- <div class="col-xl col-sm col popup-btn"> ВЫЗОВ ПОПАПА
-				<a href="#product">галерея</a>
-			</div> -->
-			<div class="col-xl col-sm col">
-				<a href="#product">продукция</a>
-			</div>
-					
-			<!-- <div class="col-xl col-sm col">
-				<a href="#contacts">контакты</a>
-			</div> -->
-		</div>	
-
-<!-- Фоновая картинка !-->
-	<div class="valdai" id="main">
-		<div class="bg">
-			<div class="col-xl-10 offset-xl-1 col-md-10 offset-md-1 col-sm-12">
-				<h1>Продукты пчеловодства</h1>
-				<span>валдайского национального парка</span>
-			</div>
-		</div>
-	</div>
-
-<!-- О НАС галлерея (слайдер) !-->
-<div class="aboutus-container" id="aboutus">
-<div class="col-4 offset-4 h1" >
-	<h1>о нас</h1>
-</div>
-	<div class="gallery">
-		<div class="container">
-			    <div class="gallery-slider">
-						<div class="gallery-block">
-							<div class="row align-items-center">
-								<img class="col-xl-4 offset-xl-1 col-md-6 col-sm-12 col-12" src="img/aram3.jpg" alt="Фотография" >
-								<div class="col-xl-6 offset-xl-1 col-md-6 col-sm-12 col-12">
-								<p>Национальный парк «Валдайский» относится к числу наиболее крупных особо охраняемых природных территорий Европейской части России. Он призван сохранять озёрно-лесные 
-	ландшафты, биологическое разнообразие.</p>	
-								</div>	
-							</div>
-						</div>
-
-						<div class="gallery-block">
-							<div class="row align-items-center">
-									<img class="col-xl-4 offset-xl-1 col-md-6 col-sm-12 col-12" src="img/aram2.jpg" alt="Фотография">
-								<div class="col-xl-6 offset-xl-1 col-md-6 col-sm-12 col-12">
-									<p>Валдайский мёд отличается универсальным вкусом и приятным легким ароматом, что позволяет добавлять его к любым блюдам вместо сахара, делая сладость полезной для здоровья.</p>	
-								</div>	
-							</div>
-						</div>
-						
-						<div class="gallery-block">
-							<div class="row align-items-center">
-									<img class="col-xl-4 offset-xl-1 col-md-6 col-sm-12 col-12" src="img/flower2.jpg" alt="Фотография">
-								<div class="col-xl-6 offset-xl-1 col-md-6 col-sm-12 col-12">
-									<p>Основными медоносами являются иван-чай, донник белый и желтый, клевер луговой, липа.</p>	
-								</div>	
-							</div>
-						</div>
+	<!-- Первый экран -->
+	<div class="menu">
+		<div class="kontainer">
+			<div class="row align-items-center menu">
+				<div class="col-lg-3">
+					<img class="img" src="img\logohead0.png" alt="ММ ПРО ГРУПП">
 				</div>
-		</div>
-	</div>
-</div>
-
-<!-- ПРОДУКЦИЯ -->
-<div class="product" id="product">
-	<div class="product-container">
-		<div class="col-4 offset-4 h1">
-			<h1>продукция</h1>
-	    </div>
-		<div class="row row-product">
-			<div class="col-xl-3 offset-xl-2 col-md-4 offset-md-1 col-sm-8 col-8 offset-2 product-block popup-btn">
-				<img src="img/honey.png" alt="мед">
-				<h1>мёд цветочный</h1>
-				<input type="text"><h1>600 р</h1>
-				<button>заказать</button>
-			</div>
-			<div class="col-xl-3 offset-xl-2 col-md-4 offset-md-2 col-sm-8 col-8 offset-2 product-block product-margin popup-btn2">
-				<img class="img2" src="img/AdobeStock_330152673.jpeg" alt="мед">
-				<h1>соты медовые</h1>
-				<input type="text"><h1>1200 р</h1>
-				<button>заказать</button>
-			</div>
-		</div>
-		<div class="row row-product">
-			<div class="col-xl-3 offset-xl-2 col-md-4 offset-md-1 col-sm-8 col-8 offset-2 product-block popup-btn3">
-				<img class="img3"src="img/perga.png" alt="мед">
-				<h1>перга</h1>
-				<input type="text"><h1>900 р</h1>
-				<button>заказать</button>
-			</div>
-			<div class="col-xl-3 offset-xl-2 col-md-4 offset-md-2 col-sm-8 col-8 offset-2 product-block product-margin popup-btn4">
-				<img class="img3" src="img/vosk.png" alt="мед">
-				<h1>воск</h1>
-				<input type="text"><h1>1100 р</h1>
-				<button>заказать</button>
+				<div class="col-lg-2 offset-lg-2">
+					<a href="#main">о нас</a>
+				</div>
+				<div class="col-lg-2">
+					<a href="#contacts">контакты</a>
+				</div>
+				<div class="col-lg-3">
+					<a href="#map">схема проезда</a>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
-
-	<!-- ПРОДУКЦИЯ (всплывающие окна) -->
-<!-- мед -->
-<div class="popup">
-	<div class="container">
-		<div class="row row-popup align-items-center">
-			<div class="product-info col-10 offset-1">
-				<bottom class="popup-close">&times</bottom>
-					<h1 class="col-10 offset-1">мёд цветочный</h1>
-					<div class="row row-info align-items-top">
-						<div class="col-sm-12 col-xl-4 offset-xl-1">
-							<img src="img/honey.png" alt="мед">
-							<input type="text">
-							<h1>600 р</h1>
-							<button>заказать</button>
-						</div>
-						<div class="col-sm-12 col-xl-6">
-							<p>Основным отличием такого продукта является то, что мёд вбирает в себя профилактические свойства огромного количества растений, от чего считается одним из самых полезных. Такой мёд восстанавливает энергию, снимает усталость и слабость, укрепляет иммунитет и нервную систему, восстанавливает пищеварение, борется с воспалительными процессами организма, служит профилактикой заболеваний сердечно-сосудистой системы, выводит токсины из организма, нормализует сон.</p>
-						</div>
-					</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- соты -->
-<div class="popup2">
-	<div class="container">
-		<div class="row row-popup align-items-center">
-			<div class="product-info col-10 offset-1">
-				<bottom class="popup-close">&times</bottom>
-					<h1 class="col-4 offset-4">соты медовые</h1>
-					<div class="row row-info align-items-end">
-						<div class="col-sm-12 col-xl-4 offset-xl-1">
-							<img src="img/AdobeStock_330152673.jpeg" alt="мед">
-							<input type="text"><h1>1200 р</h1>
-							<button>заказать</button>
-						</div>
-						<div class="col-sm-12 col-xl-6">
-							<p>Медовые соты обладают целебными свойствами при профилактике и лечении болезней дыхательных путей. Полезно для слизистой дыхательных путей жевать воск медовых сотов. Также, жевание сотов помогает при пародонтозе. Во время жевания усиливается слюноотделение, что полезно для органов пищеварения, потому что улучшаются секреторные функции желудка.</p>
-						</div>
-					</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- перга -->
-<div class="popup3">
-	<div class="container">
-		<div class="row row-popup align-items-center">
-			<div class="product-info col-10 offset-1">
-				<bottom class="popup-close">&times</bottom>
-					<h1 class="col-4 offset-4">перга</h1>
-					<div class="row row-info align-items-top">
-						<div class="col-sm-12 col-xl-4 offset-xl-1">
-							<img src="img/perga.png" alt="мед">
-							<input type="text"><h1>900 р</h1>
-							<button>заказать</button>
-						</div>
-						<div class="col-sm-12 col-xl-6">
-							<p>Перга представляет собой концентрат из пыльцы, которую насекомые собирают с цветов различных растений, мёда и молочной кислоты. Целебные свойства перги обусловлены её уникальным биохимическим наполнением. Польза перги заключается в стимулирующем воздействии на все системы, отвечающие за нормальное функционирование организма: ЦНС; эндокринную, сердечно-сосудистую, дыхательную, иммунную, мочеполовую, опорно-двигательную и желудочно-кишечный тракт.</p>
-						</div>
-					</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- воск -->
-<div class="popup4">
-	<div class="container">
-		<div class="row row-popup align-items-center">
-			<div class="product-info col-10 offset-1">
-				<bottom class="popup-close">&times</bottom>
-					<h1 class="col-4 offset-4">воск</h1>
-					<div class="row row-info align-items-center">
-						<div class="col-sm-12 col-xl-4 offset-xl-1">
-							<img src="img/vosk.png" alt="мед">
-							<input type="text"><h1>1100 р</h1>
-							<button>заказать</button>
-						</div>
-						<div class="col-sm-12 col-xl-6">
-							<p>Пчелиный воск – уникальное вещество, которое вырабатывают пчелы с помощью специальных желез. Они используют его как строительный материал для сот, «домик» для роста молодых особей. Для человека воск приносит огромную пользу организму. Его свойства применяются во многих сферах – промышленности, косметологии, быту. Целебные качества используются в официальной и народной медицине.</p>
-						</div>
-					</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-
-
-
 	
+	<div class="bg">
+		<div class="kontainer">
+			<div class="row align-items-center aboutus">
+				<div class="col-sm-12">
+					<h1>о нас</h1>
+				</div>
+				<div class="row align-items-top">
+					<div class="col-lg-6 offset-lg-0 col-sm-10 offset-sm-1">
+						<p>Компания ММ ПРО ГРУПП занимается производством металлоизделий и мебельных изделий по индивидуальным заказам, выполняем работы по металлообработке.</p>
+						<button>связаться</button>
+					</div>
+				<div class="col-lg-6 offset-lg-0 col-sm-10 offset-sm-1">
+					<ul>
+						<li>Наше производство полностью соответствует требованиям государственных стандартов и нормативов.</li><br>
+						<li>Наша продукция является надежной и долговечной в эксплуатации.</li><br>
+						<li>Заказы выполняются в срок!</li><br>
+						<li>Для предварительной оценки стоимости изготовления деталей и работ – звоните!</li>
+					</ul>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
 
-<!-- Библиотеки -->
-<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-<!-- Подключаем стили Slick Slider -->
-<link rel="stylesheet" href="slick/slick.css" class="src">
-<link rel="stylesheet" href="slick/slick-theme.css" class="src">
-<!-- Подключаем js Slick Slider -->
-<script src="slick/slick.min.js"></script>
-<!-- Инициализируем Slick Slider -->
-<script>
-	$(document).ready(function(){
-      $('.gallery-slider').slick({
-		infinite: true,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		prevArrow: '<button class="arrow prev"></button>',
-		nextArrow: '<button class="arrow next"></button>',
-		autoplay: true,
-  		autoplaySpeed: 1500,
-		speed: 500,
-		fade: true,
-      });
-    });
-</script>
-<!-- Кнопка вызова мёда -->
-<script>
-$(document).ready(function(){
-    $('.popup-btn').on('click', function(event){
-		$('.popup').fadeIn();
-		});
-      });
-</script>
-<!-- Кнопка закрытия мёда -->
-<script>
-	$(document).ready(function(){
-	$('.popup-close').on('click',function(event) {
-		$('.popup').fadeOut();
-	});
-	      });
-</script>
-<!-- Кнопка вызова сот -->
-<script>
-$(document).ready(function(){
-    $('.popup-btn2').on('click', function(event){
-		$('.popup2').fadeIn();
-		});
-      });
-</script>
-<!-- Кнопка закрытия сот -->
-<script>
-	$(document).ready(function(){
-	$('.popup-close').on('click',function(event) {
-		$('.popup2').fadeOut();
-	});
-	      });
-</script>
-<!-- Кнопка вызова перги -->
-<script>
-$(document).ready(function(){
-    $('.popup-btn3').on('click', function(event){
-		$('.popup3').fadeIn();
-		});
-      });
-</script>
-<!-- Кнопка закрытия перги -->
-<script>
-	$(document).ready(function(){
-	$('.popup-close').on('click',function(event) {
-		$('.popup3').fadeOut();
-	});
-	      });
-</script>
-<!-- Кнопка вызова воска -->
-<script>
-$(document).ready(function(){
-    $('.popup-btn4').on('click', function(event){
-		$('.popup4').fadeIn();
-		});
-      });
-</script>
-<!-- Кнопка закрытия воска -->
-<script>
-	$(document).ready(function(){
-	$('.popup-close').on('click',function(event) {
-		$('.popup4').fadeOut();
-	});
-	      });
-</script>
+<!-- Металл -->
+	<div class="block">
+		<div class="kontainer" id="main">
+			<div class="row align-items-center">
+				<h1>металл</h1>
+			</div>
+			<div class="row align-items-center block-works">
+				<div class="col-lg-4"><img src="img\workman-wearing-hard-hat-working-with-metal-constructions-at-factory.jpg"></div>
+				<div class="col-lg-8 works">
+					<ul>
+						<li>Токарные работы</li>
+						<li>Сверлильные работы</li>
+						<li>Резка металла</li>
+						<li>Нарезание работы</li>
+						<li>Галтовка металла</li>
+						<li>Торцуем новыми пластинами</li>
+						<li>Совместная разработка Россия-Китай</li>
+						<li>Режем металл диаметром до 225 мм <br> в т.ч. под углом от 0 до 60 градусов</li>
+						<li>Принимаем заказы на серийные токарные <br> работы</li>
+						</ul>
+						<p>Металл: <br>
+						сталь и цветные металлы</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- Мебель -->
+	<div class="block">
+		<div class="kontainer">
+			<div class="row align-items-center">
+				<h1>мебель</h1>
+			</div>
+			<div class="row align-items-center block-works">
+				<div class="col-lg-4"><img src="img\wooden-plant-stand-with-a-cactus-on-the-side.jpg"></div>
+				<div class="col-lg-8 works">
+					<ul>
+						<li>Изготовление мебели по индивидуальному заказу</li>
+						<li>Принимаем заказы на серийные работы</li>
+					</ul>
+						<p>Материал: МДФ и ДСП</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Остались вопросы? -->
+	<div class="bg2">
+			<div class="kontainer" id="contacts">
+				<div class="row align-items-top justify-content-center">
+					<div class="col-lg-5">
+						<h1>остались вопросы?</h1>
+					</div>
+				</div>
+				<div class="row align-items-center justify-content-center contacts">
+					<div class="col-lg-7">
+						<p>Если у Вас остались вопросы, мы с радостью ответим на них по телефону <br>8-926-000-00-00. Также Вы можете оставить заявку на сайте и наш менеджер свяжется с Вами.</p>
+					</div>
+					<div class="col-lg-4 offset-1">
+						<div class="main-form" id="inline">
+							<form action="form-lesson/mail.php" method="POST">
+								<input class="txt" name="username" type="text" placeholder="Ваше имя">
+								<input class="txt" name="userphone" type="text" placeholder="Ваш телефон">  
+								<textarea class="txtarea" name="text" placeholder="Ваше сообщение:"></textarea>
+								<button type="submit">оставить заявку</button>
+							</form>
+						</div>	
+					</div>
+				</div>
+				</div>
+			</div>
+
+	<!-- Схема проезда -->
+	<div class="block">
+		<div class="kontainer" id="map">
+			<div class="row align-items-center">
+				<h1>схема проезда</h1>
+			</div>
+			<div class="row align-items-center block-works">
+				<div class="col-lg-7">
+						<p>Адрес: г. Зеленоград ул. Радио 23с9 <br>
+						Телефоны:<br> 
+						+79854434948 Андрей<br>
+						+79264049484 Кирилл<br>
+						E-mail:  mmprogrupp@gmail.com</p>
+				</div>
+				<div class="col-lg-5 map">
+					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A30e92330c51b28fd64313ec6c61414eaed90d087a16cf40429e25b6a257279a8&amp;width=500&amp;height=500&amp;lang=ru_RU&amp;scroll=false"></script>
+				</div>
+			</div>
+		</div>
+	</div>
+
 
 </body>
-
 </html>
