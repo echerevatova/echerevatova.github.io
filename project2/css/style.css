@@ -140,7 +140,8 @@ img {
   text-align: center;
   background-color: #32272D;
   color: #EEEEEE;
-  padding: 5px;
+  padding: 10px;
+  line-height: 30px;
 }
 
 @media (min-width: 1600px) {
