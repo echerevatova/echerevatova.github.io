@@ -1,433 +1,167 @@
 // Переменные
-$bgColor:#FBF9EA; // белый
-$fontColor: #3F2A1B ; //коричневый
-$bgColor2: #8A5D3B;
-$Gilroy:'Gilroy', sans-serif;
+$green: #C5DE65;
+$fontColor: #32272D ; //коричневый
 $Montserrat:'Montserrat', sans-serif;
-$bgColor2: #A0876F; //светло-коричневый
 
-// Миксины Стандарт
-@mixin HeaderFontSettings ($weight, $size) {
+// Миксины
+@mixin HeaderFontSettings{
 	font-family: $Montserrat;
-	font-size: $size;
+	font-size: 40px;
 	text-transform: uppercase;
 	color: $fontColor;
-	font-weight: $weight;
+	font-weight: 700;
 	text-align: center;
 }
-
-@mixin FontSettings ($weight, $size) {
-	font-family: $Gilroy;
-	font-size: $size;
+@mixin FontSettings{
+	font-family: $Montserrat;
+	font-size: 30px;
 	color: $fontColor;
-	font-weight: $weight;
-	text-align: center;	
+	text-align: left;
+	font-weight: 600;
+	line-height: 40px;
 }
 
 // Общие настройки
 
+.kontainer {
+	padding: 0% 5% ;
+}
+a:hover, a:active {
+		cursor: pointer;
+	}
 h1 {
-	@include HeaderFontSettings(600, 40px);
+	@include HeaderFontSettings;
 	}
-span {
-	@include HeaderFontSettings(400, 40px)
-	}
-a {
+a, p, span, li {
+	@include FontSettings;
  	text-decoration: none;
- 	@include FontSettings(100, 24px);
  	}
-
-p {
-  	@include FontSettings(100, 24px);
-  	}
-
-
-// Шапка меню
-.menu {
-	box-shadow: 0 0 10px 2px $fontColor;
-	height: 100px;
-    width: 100%;
-    position: fixed;
-    margin: 0;
-	background-color: $bgColor;
-	z-index: 101;
-	padding: 0 70px 10px 70px;
-	text-align: center;
-  	img {
-  	height: 80px;
-  	}
+ a{
+ 	font-weight: 700;
+ }
+ li {
+ 	text-align: left;
+ }
+button {
+	@include FontSettings;
+	font-weight: 700;
+	background-color: $green;
+	border: none;
+	border-radius: 7px;
+	color: $fontColor;
+	padding: 5px 50px;
+	box-shadow: 3px 3px 7px 0px $fontColor;
+ }
+ img {
+ 	width: 100%;
+ 	box-shadow: 3px 3px 7px 0px $fontColor;
  }
 
-// Фоновая картинка
-.h1 {
-	padding-top: 45px;
-}
-.valdai {
-	padding-top: 87px;
+// Первый экран
+.menu{
+	background-color: $green;
+	height: 80px;
+	width: 100%;
 	text-align: center;
+	.img{
+		width: 300px;
+		box-shadow: none;
+	}
+}
+
+.bg, .bg2 {
+	width: 100%;
 	height: 700px;
+	background-size: cover;
+}
+
+
+.bg {
+	margin: -60px 0 0px 0;
+	background: url("../img/bg10.jpg") top center no-repeat;
+	.aboutus {
+	margin-top: 60px;
+	h1{
+	margin-top: 60px;
+	text-align: left;
+	}
+	p, li, h1{
+	color: #EEEEEE;
+	text-shadow: 0 0 5px #32272D;
+	}
+	}
+}
+
+// Металл
+.block {
+	margin: 60px 0;
+}
+.block-works {
+	margin-top: 60px;
+	.works {
+		padding-left: 130px;
+	}
+}
+.bg2 {
+margin-top: 80px;
+background: url("../img/bg20.jpg") bottom center no-repeat;
+	h1{
+	margin: 60px 0 60px 0;
+	}
+	p, h1 {
+	color: #EEEEEE;
+	text-shadow: 0 0 5px #32272D;
+	}
+}
+
+// Остались вопросы?
+.main-form {
+	background-color: $green;
+	padding:70px 50px;
+	text-align: left;
+	box-shadow: 3px 3px 7px 0px $fontColor;
+	border-radius: 10px;
+	textarea {
+	height: 100px;
+	}
+	input, textarea {
+	margin: 20px 0;
+	display: block;
+	border: 1px solid $fontColor;
+	width:100%;
+	padding: 10px;
+	box-shadow: 3px 3px 7px 0px $fontColor;
+	}
+	button{
+	font-weight: 600;
+	text-align: center;
+	background-color: $fontColor;
+	color: #EEEEEE;
+	padding: 5px 25px;
+	}
+}
+
+@media (min-width: 1600px) {
 	.bg {
-		height: 100%;
-		background: $bgColor url("../img/bg.png") center bottom no-repeat;
-		padding-top: 237px;
-	}
-}
-
-// О НАС (слайдер)
-.aboutus-container {
-	padding: 70px 0px 65px 0;
-.gallery {
-	padding-top: 20px;
-	text-align: center;
-	}
-	.gallery-slider {
-		z-index: 100;
-		padding: 0px 80px 0 80px;
-	}
-.arrow {
-			position: absolute;
-			z-index: 99;
-			width: 2rem;
-			height: 4rem;
-			border: none;
-			top: 50%;
-			transform: translateY(-50%);
-		}
-}
-
-
-// ПРОДУКЦИЯ
-.product {
-padding: 40px 0;
-	.product-container {
-	background-color: $bgColor2;
-	margin: 40px 0px;
-	padding-bottom: 100px;
-	.row-product {
-	margin-top: 30px;
+	.aboutus {
+	height: 850px;
 	width: 100%;
-	}
-	.product-block {
-	height: 400px;
-	display: inline-block;
-	text-align: center;
-	padding: 25px 10px 0px;
-	border-radius: 50px;
-	border: 3px solid #3F2A1B;
-	border-top: 8px solid #3F2A1B;
-	background-color: $bgColor;
-		img {
-			width: 150px;
-			margin-bottom: 30px;
+		h1{
+	margin-top: 0;
 		}
-		.img2 {
-			width: 180px;
-		}
-		h1 {
-		@include FontSettings(900, 25px);
-		}
-		button {
-		@include FontSettings(900, 20px);
-		background-color: $fontColor;
-		border: none;
-		border-radius: 7px;
-		color: $bgColor;
-		padding: 3px 20px;
-		}
-		input {
-		border-radius: 7px;
-		border: 2px solid #3F2A1B;	
-		}
-	&:hover{
-		transform: scale(1.05);
-		 transition: 0.4s;
 	}
 }
+	.bg, .bg2 {
+	height: 850px;
+	}
+.bg2 {
+	h1{
+	margin: 60px 0 0 0;
+	}
+}
+	.contacts {
+	height: 750px;
 }
 }
 
-// Продукция (всплывающее окно)
-.popup, .popup2, .popup3, .popup4 {
-	display: none;
-	height: 100%;
-	width: 100%;
-	position: fixed;
-	left: 50%;
-	top: 0;
-	transform: translateX(-50%);
-	z-index: 102;
-	background-color: rgba(0, 0, 0, 0.9);
-	.popup-close {
-	&:hover {
-		cursor: pointer;
-	};
-	position: absolute;
-	top: 10rem;
-	right: 12rem;
-	z-index: 200;
-	width: 4rem;
-	color: $fontColor;
-	font-size: 26px;
-	}
-	.product-info{
-	margin-top: 140px;
-	text-align: center;
-	min-height: 500px;
-	padding: 40px 10px 40px;
-	border-radius: 50px;
-	border: 3px solid #3F2A1B;
-	background-color: $bgColor;
-	}
-	.row-popup {
-		width: 100%;
-	}
-	.row-info {
-		margin-top: 30px;
-	}
-	p {
-		display: inline-block;
-		text-align: justify;
-		font-size: 20px;
-	}
-	img {
-			width: 55%;
-			margin-bottom: 30px;
-		}
-		.img2 {
-			width: 63%;
-		}
-		h1 {
-		@include FontSettings(900, 25px);
-		}
-		button {
-		@include FontSettings(900, 20px);
-		background-color: $fontColor;
-		border: none;
-		border-radius: 7px;
-		color: $bgColor;
-		padding: 3px 20px;
-		}
-		input {
-		border-radius: 7px;
-		border: 2px solid #3F2A1B;	
-		}
-	
-}
-
-// АДАПТАЦИЯ ДЛЯ ПЛАНШЕТОВ
-
-@media (max-width: 1199px) {
-	h1 {
-	@include HeaderFontSettings(700, 23px);
-	}
-	span {
-	@include HeaderFontSettings(500, 23px);	
-	}
-	a {
- 	text-decoration: none;
- 	@include FontSettings(100, 20px);
- 	}
-	p {
-	margin-top: 20px;
-  	@include FontSettings(100, 20px);
-  	}
-  	.h1 {
-	padding-top: 45px;
-}
-	.menu {
-	height: 70px;
-	padding: 0 15px 10px 15px;
-  	img {
-  	height: 44px;
-  	}
- 	}
-
-	.valdai {
-	padding-top: 0px;
-	height: 400px;
-	.bg {
-		height: 100%;
-		background: $bgColor url("../img/bg.png") bottom center;
-		padding-top: 190px;
-		}
-	}
-	
-	.gallery {
-	padding-top: 20px;
-	.gallery-slider {
-		padding: 10px 20px;
-		.prev {
-			background-size: 70%;
-			left: -2%;
-		}
-		.next {
-			background-size: 70%;
-			right: -2%;
-		}
-	}
-
-}
-}
-// АДАПТАЦИЯ ДЛЯ МИНИ-ПЛАНШЕТОВ
-@media (max-width: 767px) {
-	.h1 {
-	padding-top: 80px;
-}
-.gallery {
-	padding-top: 0px;
-	.gallery-slider {
-		padding: 10px 40px;
-		.prev {
-			background-size: 70%;
-			left: -2%;
-		}
-		.next {
-			background-size: 70%;
-			right: -2%;
-		}
-	}
-}
-.popup{
-	.gallery-slider {
-	margin-top: 10%;
-	}
-}
-
-.product {
-padding: 60px 0;
-	.product-container {
-	margin: 40px 0px;
-	padding-bottom: 100px;
-	.row-product {
-	margin-top: 0px;
-	width: 100%;
-	}
-	.product-block {
-	margin-top: 30px;
-	height: 450px;
-	padding: 50px 10px 0px;
-		img {
-			width: 180px;
-			margin-bottom: 30px;
-		}
-		.img2 {
-			width: 200px;
-		}
-	}
-	}
-	}
-}
-
-// АДАПТАЦИЯ ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ
-@media (max-width: 575px) {
-	h1 {
-	@include HeaderFontSettings(700, 20px);
-	}
-	span {
-	@include HeaderFontSettings(500, 20px);	
-	}
-	a {
- 	text-decoration: none;
- 	@include FontSettings(100, 15px);
- 	}
-	p {
-	margin-top: 20px;
-  	@include FontSettings(100, 15px);
-  	}
-  	.h1 {
-	padding-top: 70px;
-	}
-
-	.menu {
-	height: 60px;
-	padding: 10px 10px 10px 10px;
-  	img {
-  	height: 40px;
-  	}
- 	}
-
-	.valdai {
-	padding-top: 0px;
-	height: 350px;
-	.bg {
-		height: 100%;
-		background: $bgColor url("../img/bg.png") bottom center;
-		padding-top: 160px;
-		}
-	}
-	
-	.gallery {
-	padding-top: 0px;
-	.gallery-slider {
-		padding: 5px 60px 0 60px;
-		.prev {
-			background-size: 50%;
-			left: 5px;
-		}
-		.next {
-			background-size: 50%;
-			right: 5px;
-		}
-	}
-
-}
-.popup{
-	.gallery-slider {
-	margin-top: 30%;
-	}
-}
-
-.product {
-padding: 60px 0;
-	.product-container {
-	margin: 40px 0px;
-	padding-bottom: 100px;
-	.row-product {
-	margin-top: 0px;
-	width: 100%;
-	}
-	.product-block {
-	margin-top: 30px;
-	height: 400px;
-	padding: 25px 10px 0px;
-		img {
-			width: 150px;
-			margin-bottom: 30px;
-		}
-		.img2 {
-			width: 180px;
-		}
-	}
-	}
-	}
-
-	.popup, .popup2, .popup3, .popup4 {
-	.popup-close {
-	top: 2rem;
-	right: 5.4rem;
-	}
-	.product-info{
-	margin-top: 10px;
-	text-align: center;
-	min-height: 500px;
-	padding: 70px 10px 15px;
-	}
-	p {
-		display: inline-block;
-		text-align: justify;
-		font-size: 15px;
-	}
-	img {
-			width: 170px;
-			margin-bottom: 15px;
-		}
-		.img2 {
-			width: 63%;
-		}
-		h1 {
-		@include FontSettings(900, 20px);
-		}
-	
-}
-}
-
+// Моб адаптация
