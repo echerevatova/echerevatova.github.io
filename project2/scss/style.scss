@@ -1,0 +1,141 @@
+// Переменные
+$green: #C5DE65;
+$fontColor: #32272D ; //коричневый
+$Montserrat:'Montserrat', sans-serif;
+
+// Миксины
+@mixin HeaderFontSettings{
+	font-family: $Montserrat;
+	font-size: 40px;
+	text-transform: uppercase;
+	color: $fontColor;
+	font-weight: 700;
+	text-align: center;
+}
+@mixin FontSettings{
+	font-family: $Montserrat;
+	font-size: 30px;
+	color: $fontColor;
+	text-align: left;
+	font-weight: 600;
+	line-height: 40px;
+}
+
+// Общие настройки
+.kontainer {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+a:hover, a:active {
+		cursor: pointer;
+	}
+h1 {
+	@include HeaderFontSettings;
+	}
+a, p, span, li {
+	@include FontSettings;
+ 	text-decoration: none;
+ 	}
+ a{
+ 	font-weight: 700;
+ }
+ li {
+ 	text-align: left;
+ }
+button {
+	@include FontSettings;
+	font-weight: 700;
+	background-color: $green;
+	border: none;
+	border-radius: 7px;
+	color: $fontColor;
+	padding: 5px 50px;
+	box-shadow: 3px 3px 7px 0px $fontColor;
+ }
+ img {
+ 	box-shadow: 3px 3px 7px 0px $fontColor;
+ }
+
+// Первый экран
+.menu{
+	background-color: $green;
+	height: 80px;
+	width: 100%;
+	text-align: right;
+	img{
+		width: 300px;
+		box-shadow: none;
+	}
+}
+
+.bg, .bg2 {
+	width: 100%;
+	height: 850px;
+	background-size: cover;
+}
+.bg {
+	background: url("../img/bg10.jpg") top center no-repeat;
+	.aboutus {
+	height: 850px;
+	h1{
+	text-align: left;
+	}
+	p, li, h1{
+	color: #EEEEEE;
+	text-shadow: 0 0 5px #32272D;
+	}
+	}
+}
+
+// Металл
+.block {
+	margin: 60px 0;
+	img{
+		width: 350px;
+	}
+}
+.block-works {
+	margin-top: 60px;
+}
+.bg2 {
+margin-top: 80px;
+background: url("../img/bg20.jpg") bottom center no-repeat;
+	h1{
+	margin: 60px 0 60px 0;
+	}
+	p, h1 {
+	color: #EEEEEE;
+	text-shadow: 0 0 5px #32272D;
+	}
+}
+
+// Остались вопросы?
+.form {
+	width: 100%px;
+	height: 100%px;
+	padding: 60px 50px;
+	background-color: $green;
+	text-align: left;
+	box-shadow: 3px 3px 7px 0px $fontColor;
+	border-radius: 10px;
+	textarea {
+	height: 250px;
+	}
+	input, textarea {
+	margin-bottom: 20px;
+	display: block;
+	border: 2px solid $fontColor;
+	width:100%;
+	padding: 10px;
+	border-radius: 5px;
+	}
+	button{
+	width: 100%;
+	font-weight: 600;
+	text-align: center;
+	background-color: $fontColor;
+	color: #EEEEEE;
+	padding: 10px;
+	line-height: 30px;
+	}
+}
