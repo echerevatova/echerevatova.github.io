@@ -38,7 +38,7 @@
 				</div>
 					<div class="col-lg-6 align-self-start">
 						<p>Компания ММ ПРО ГРУПП занимается производством металлоизделий по индивидуальным заказам в разных объемах. Выполняем работы по металлообработке на заказ.</p>
-						<button>связаться</button>
+						<button><a href="#contacts">связаться</a></button>
 					</div>
 				<div class="col-lg-6 align-self-start">
 					<ul>
@@ -77,6 +77,100 @@
 				</div>
 			</div>
 		</div>
+	</div>
+
+	<div class="block">
+		<div class="kontainer" id="main">
+			<div class="row align-items-center">
+				<h2>ВТС – это защита от вибрации и ударов <br>
+в промышленности и на любом транспорте</h2>
+			</div>
+			<div class="row align-items-top block-works">
+				<div class="col-lg-5">
+					<p>Мы изготавливаем виброизоляторы ВТС (виброизолятор тросовой сферический).
+
+Упругодемпфирующий элемент ВТС  - отрезки стальных канатов.
+Стальные канаты обеспечивают высокую эффективность ВТС при защите оборудования, вычислительных комплексов и прецизионных систем от воздействий вибраций и ударов в любом направлении.</p>
+				</div>
+				<div class="col-lg-3">
+					<img src="img\2.jpg" class="img1 popup-btn">
+				</div>
+				<div class="col-lg-4">
+					<img src="img\3.jpg" class="img2 popup-btn">
+					<img src="img\1.jpg" class="img2 popup-btn">
+				</div>
+			</div>
+			<div class="row align-items-center">
+				<div class="col-lg-12">
+					<p>Наши виброизоляторы с номинальными нагрузками от 25 до 80 кг обладает узким диапазоном частот вибрации (1 – 3 Гц), при котором коэффициент динамичности больше единицы, что существенно отличает ВТС от линейных и других аналогичных виброизоляторов. При необходимости мы изготовим ВТС до 25 кг.</p>
+				</div>
+			</div>
+			<div class="row align-items-center">
+				<div class="col-lg-12">
+					<p>ВТС:</p>
+					<li>ресурс 15000 часов в течение срока службы 15 лет;</li>
+					<li>гарантийная наработка 12000 часов в пределах гарантийного срока эксплуатации 7 лет;</li>
+					<li>гарантийный срок хранения в отапливаемых помещениях не ограничен.</li>
+					<p>Срок изготовления зависит от количества ВТС.</p>
+				</div>
+			</div>
+			<div class="row">
+			<p>Наша стоимость без НДС, РУБ:</p>
+				<div class="col-lg-3">
+					<p>ФРИЛ.304242.007<br>
+						ФРИЛ.304242.010<br>
+						ФРИЛ.304242.008<br>
+						ФРИЛ.304242.006<br>
+						ФРИЛ.304242.022	
+						</p>
+				</div>
+				<div class="col-lg-2 mytable">
+					<p>ВТС 6-25<br>
+						ВТС 6-35<br>
+						ВТС 8-40<br>
+						ВТС 8-50<br>
+						ВТС 8-80	
+						</p>
+				</div>
+				<div class="col-lg-1 mytable">
+					<p>25кг<br>
+						35кг<br>
+						40кг<br>
+						50кг<br>
+						80кг	
+						</p>
+				</div>
+				<div class="col-lg-2 mytable">
+					<p>4 791,00<br>
+						4 954,00<br>
+						5 100,00<br>
+						5 226,00<br>
+						5 226,00	
+						</p>
+				</div>
+			</div>
+				<button><a href="#contacts">заказать</a></button>
+		</div>
+<!-- Всплывающая галлерея -->
+<div class="popup">
+	<div class="kontainer">
+		<bottom class="popup-close">&times</bottom>
+		    <div class="gallery-slider">
+					<div>
+						<img src="img\2.jpg">	
+					</div>
+					<div>
+						<img src="img\3.jpg">	
+					</div>
+					<div>
+						<img src="img\1.jpg">	
+					</div>
+			</div>
+	</div>
+</div>
+
+
+
 	</div>
 
 <!-- Мебель -->
@@ -153,6 +247,38 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <!-- Подключаем стили Slick Slider -->
+	<link rel="stylesheet" href="slick/slick.css" class="src">
+	<link rel="stylesheet" href="slick/slick-theme.css" class="src">
+	<!-- Подключаем js Slick Slider -->
+	<script src="slick/slick.min.js"></script>
+    <script>
+	$('.popup-btn').click(function(){
+	$('.popup').fadeIn();
+    $('.gallery-slider').slick({
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		prevArrow: '<button class="prev"></button>',
+		nextArrow: '<button class="next"></button>',
+		autoplay: false,
+      });
+    });
+	</script>
+    <script>
+$(document).ready(function(){
+    $('.popup-btn').on('click', function(event){
+		$('.popup').fadeIn();
+		});
+      });
+	</script>
+	<script>
+	$(document).ready(function(){
+	$('.popup-close').on('click',function(event) {
+		$('.popup').fadeOut();
+	});
+	      });
+	</script>
 
-</body>
-</html>
+	</body>
+	</html>
