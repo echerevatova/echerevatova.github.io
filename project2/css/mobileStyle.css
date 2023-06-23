@@ -1,0 +1,177 @@
+@media (min-width: 1200px) {
+  .logo2 {
+    display: none;
+  }
+}
+@media (max-width: 1199px) {
+  body {
+    text-align: center;
+  }
+  h1, h2 {
+    text-align: center;
+    font-size: 25px;
+  }
+  p, span, li {
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  a {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  ul {
+    list-style-type: none;
+    line-height: 15px;
+    padding-left: 0;
+  }
+  button, .button {
+    border-radius: 7px;
+    padding: 1px 20px;
+    line-height: 1px;
+  }
+  button a, .button a {
+    font-size: 20px;
+  }
+  .menu {
+    height: 45px;
+    width: 100%;
+    text-align: right;
+  }
+  .menu .logo {
+    display: none;
+  }
+  .menu .logo2 {
+    width: 35px;
+  }
+  .bg, .bg2 {
+    background-size: auto 100%;
+  }
+  .bg, .bg2 {
+    background-position: 5% 50%;
+  }
+  .bg ul, .bg2 ul {
+    margin-top: 20px;
+  }
+  .bg .aboutus, .bg2 .aboutus {
+    height: 850px;
+  }
+  .bg .aboutus h1, .bg2 .aboutus h1 {
+    text-align: center;
+  }
+  .block {
+    text-align: center;
+    margin: 30px 0;
+  }
+  .block .advantages h2 {
+    text-align: center;
+  }
+  .block .advantages ul {
+    margin-top: 30px;
+    margin-bottom: 0;
+    line-height: 15px;
+  }
+  .block .advantages li {
+    font-size: 20px;
+    text-align: center;
+  }
+  .block .advantages p {
+    text-align: center;
+    font-size: 20px;
+    margin: 0px;
+  }
+  .block img {
+    width: 60%;
+  }
+  .block .mytable p {
+    text-align: right;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .block .block-works {
+    margin-top: 30px;
+  }
+  .block .block-works2 {
+    margin-top: 30px;
+  }
+  .block .img1:hover, .block .img2:hover, .block .img3:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  .block .img1 {
+    width: 100%;
+  }
+  .block .img2 {
+    width: 100%;
+    height: 40%;
+  }
+  .block .top, .block .map {
+    margin-top: 30px;
+  }
+  .block .lowtop {
+    margin-top: -30px;
+  }
+  .button {
+    font-size: 20px;
+    padding: 5px 20px;
+    margin: 5px;
+  }
+  .bg2 {
+    background: url("../img/bg20.jpg") bottom center no-repeat;
+    background-size: 370% auto;
+  }
+  .bg2 h1 {
+    margin: 30px 0 30px 0;
+  }
+  .form {
+    margin: 30px 0 60px 0;
+    width: 100%;
+    padding: 40px 30px;
+  }
+  .form textarea {
+    height: 150px;
+  }
+  .form input, .form textarea {
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  .form button {
+    font-size: 20px;
+  }
+  .popup .popup-close, .popup2 .popup-close {
+    top: 1px;
+    right: 1px;
+  }
+  .gallery-slider img, .gallery-slider2 img {
+    height: auto;
+    width: 70%;
+  }
+  .prev, .next {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    position: absolute;
+    z-index: 500;
+    width: 2rem;
+    height: 4rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .prev {
+    background: url("../img/prev.svg") center no-repeat;
+    background-size: 20px;
+    left: 5%;
+  }
+  .next {
+    background: url("../img/next.svg") center no-repeat;
+    background-size: 20px;
+    right: 5%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
