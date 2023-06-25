@@ -145,9 +145,6 @@ img, button, .button {
   width: 84%;
   margin-bottom: 10px;
 }
-.block .top {
-  margin-top: 50px;
-}
 
 .popup, .popup2 {
   display: none;
