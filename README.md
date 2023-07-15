@@ -1,7 +1,11 @@
 Портфолио Череватовой Е.Н.
 
-Сайт [ММ ПРО ГРУПП](https://mmprogrupp.ru/)
-Проект [ММ ПРО ГРУПП](https://github.com/echerevatova/echerevatova.github.io/tree/main/mmprogroup)
+ММ ПРО ГРУПП 
 
-Сайт [АВЕ МЁД](https://echerevatova.github.io/honey/index.html)
-Проект [АВЕ МЁД](https://github.com/echerevatova/echerevatova.github.io/tree/main/honey)
+[Сайт](https://mmprogrupp.ru/)
+[Проект](https://github.com/echerevatova/echerevatova.github.io/tree/main/mmprogroup)
+
+АВЕ МЁД 
+
+[Сайт](https://echerevatova.github.io/honey/index.html)
+[Проект](https://github.com/echerevatova/echerevatova.github.io/tree/main/honey)
