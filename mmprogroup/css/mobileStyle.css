@@ -1,0 +1,154 @@
+@media (max-width: 1199px) {
+  body {
+    text-align: center;
+  }
+  p, span, li {
+    text-align: center;
+  }
+  a {
+    font-size: 26px;
+    font-weight: 700;
+  }
+  ul {
+    list-style-type: none;
+    line-height: 15px;
+    padding-left: 0;
+  }
+  .mytable {
+    margin-bottom: 30px;
+  }
+  .mytable p {
+    text-align: left;
+  }
+  .fadeIn {
+    display: none;
+  }
+  .fadeOn {
+    height: 60px;
+    margin-top: 60px;
+    display: inline-block;
+  }
+  button, .button {
+    border-radius: 7px;
+    padding: 10px 60px;
+    line-height: 1px;
+  }
+  button a, .button a {
+    font-size: 30px;
+  }
+  .mobilemargin {
+    margin-top: 60px;
+  }
+  .menu {
+    height: 60px;
+  }
+  .bg, .bg2 {
+    background-size: auto 100%;
+  }
+  .bg .rowheight, .bg2 .rowheight {
+    height: 1600px;
+  }
+  .bg {
+    background-position: 50% 50%;
+  }
+  .bg .rowheight h1 {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  .bg2 {
+    background-position: 5% 50%;
+  }
+  .bg2 .rowheight h1 {
+    margin: 60px 0 -30px;
+  }
+  .block {
+    text-align: center;
+  }
+  .block .advantages h2 {
+    text-align: center;
+  }
+  .block .advantages ul {
+    margin-bottom: 0;
+  }
+  .block .advantages p {
+    margin: 0px;
+  }
+  .block img {
+    width: 60%;
+  }
+  .block .margin60, .block .margin30 {
+    margin-top: 60px;
+  }
+  .block .img1:hover, .block .img2:hover, .block .img3:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+  .block .p .img2, .block .p .img1, .block .p .img3 {
+    float: none;
+    margin-bottom: 60px;
+  }
+  .block .p .img3 {
+    display: block;
+    width: 250px;
+    margin-top: -185px;
+    margin-left: 440px;
+    margin-right: 20px;
+  }
+  .block .p .img2 {
+    display: inline;
+    width: 250px;
+    margin: -190px 20px 20px 10px;
+  }
+  .block .p .img1 {
+    display: inline;
+    width: 315px;
+    margin: 0 10px 20px 20px;
+  }
+  .block .img2 {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+  .block .top, .block .map {
+    margin-top: 60px;
+  }
+  .lowtop {
+    margin-top: -60px;
+    height: 60px;
+  }
+  .button {
+    padding: 5px 30px;
+    margin: 5px;
+  }
+  .popup .popup-close, .popup2 .popup-close {
+    top: 50px;
+    right: 50px;
+    font-size: 30px;
+  }
+  .gallery-slider img, .gallery-slider2 img {
+    padding-top: 50px;
+    height: auto;
+    width: 60%;
+  }
+  .prev {
+    left: 2%;
+  }
+  .next {
+    right: 2%;
+  }
+}
+.form {
+  margin: -30px 0 80px 0;
+  width: 100%;
+  padding: 70px 40px;
+}
+.form textarea {
+  height: 200px;
+}
+.form input {
+  height: 70px;
+}
+.form button {
+  font-size: 30px;
+  padding: 20px 0;
+}
