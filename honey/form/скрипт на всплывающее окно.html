@@ -1,0 +1,15 @@
+<script>
+		$('form').submit(function(event) {
+			event.preventDefault();
+			$ajax({
+				type: "POST",
+				url: "form-lesson/mail.php",
+				data: $(this).seralize()
+			}).done(function(){
+				$(this).find("input").val("");
+				alert("Сообщение успешно отправлено");
+				$("form").trigger("reset");
+			});
+			return false;
+		});
+	</script>
