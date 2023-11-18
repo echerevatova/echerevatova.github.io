@@ -6,7 +6,7 @@
 
 АВЕ МЁД 
 
-[Сайт](https://echerevatova.github.io/honey/index.html)
+[Сайт](https://avehoney.ru/)
 
 KOPIBERY
 
