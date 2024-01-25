@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway.ttf");
+}
+body {
+  background-color: #191411;
+  font-family: "Raleway", sans-serif;
+  color: #2C2D35;
+  background: #F4F6F5;
+}
+
+.container {
+  padding: 0 clamp(1.875rem, -9.345rem + 26.02vw, 21.875rem);
+}
+
+h1 {
+  font-size: clamp(2.25rem, 1.427rem + 2.58vw, 3.75rem);
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.h1-green {
+  display: inline-block;
+  color: #598D66;
+}
+
+h2 {
+  color: #2C2D35;
+  font-size: clamp(1.5rem, 0.952rem + 1.72vw, 2.5rem);
+  font-weight: 500;
+}
+
+p {
+  color: #86928B;
+  font-size: clamp(1rem, 0.931rem + 0.22vw, 1.125rem);
+  font-weight: 500;
+  line-height: 150%;
+  margin: clamp(0.625rem, -1.089rem + 5.38vw, 3.75rem) 0;
+}
+
+a {
+  text-decoration: none;
+  color: #2C2D35;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+button {
+  background: none;
+  border: 1px solid #598D66;
+  color: #598D66;
+  font-size: clamp(1.125rem, 1.056rem + 0.22vw, 1.25rem);
+  padding: clamp(0.625rem, 0.282rem + 1.08vw, 1.25rem) clamp(1.875rem, 0.847rem + 3.23vw, 3.75rem);
+}
+
+button:hover {
+  cursor: pointer;
+  background: #598D66;
+  color: #F4F6F5;
+  transition: 0.2s;
+}
+
+.header {
+  background-color: #E1EDE6;
+  padding: 33px 0;
+}
+.header .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .menu a {
+  margin-right: 60px;
+}
+.header .menu a:hover {
+  color: #376B44;
+  transition: 0.2s;
+}
+.header .menu svg:hover {
+  cursor: pointer;
+}
+.header .menu svg:hover path {
+  stroke: #376B44;
+  transition: 0.2s;
+}
+.header .menu .open {
+  display: flex !important;
+}
+.header .menu .burger {
+  display: none;
+  position: relative;
+  z-index: 50;
+  align-items: center;
+  justify-content: flex-end;
+  width: 30px;
+  height: 18px;
+}
+.header .menu .burger span {
+  height: 2px;
+  width: 100%;
+  transform: scale(1);
+  background-color: #191411;
+}
+.header .menu .burger::before, .header .menu .burger::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #191411;
+  transition: all 0.3s ease 0s;
+}
+.header .menu .burger::before {
+  top: 0;
+}
+.header .menu .burger::after {
+  bottom: 0;
+}
+.header .menu .burger.active span {
+  transform: scale(0);
+}
+.header .menu .burger.active::before {
+  top: 50%;
+  transform: rotate(-45deg) translate(0, -50%);
+}
+.header .menu .burger.active::after {
+  bottom: 50%;
+  transform: rotate(45deg) translate(0, 50%);
+}
+.header .menu .shopping-cart {
+  display: none;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 69px;
+}
+
+.bird img {
+  width: clamp(12.188rem, 0.363rem + 37.1vw, 33.75rem);
+  height: clamp(14.938rem, 1.845rem + 41.08vw, 38.813rem);
+}
+
+.shop-header {
+  margin-right: auto;
+}
+
+.tab {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tab > label {
+  display: block;
+  padding: 10px 20px;
+  border: 2px solid #D4E8D9;
+  cursor: pointer;
+  background: #D4E8D9;
+  border-radius: 20px;
+  color: #2C2D35;
+  font-size: clamp(1.125rem, 1.056rem + 0.22vw, 1.25rem);
+  font-weight: 500;
+  margin-left: 28px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+.tab > input[type=radio]:checked + label {
+  border: 2px solid #598D66;
+  background: #D4E8D9;
+}
+
+.tab > input[type=radio]:hover + label {
+  border-radius: 20px;
+  background: #598D66;
+  color: #F4F6F5;
+  transition: 0.2s;
+  border: 2px solid #598D66;
+}
+
+.tab > input[type=radio] {
+  display: none;
+}
+
+.tab-content {
+  display: none;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: clamp(1.875rem, -1.057rem + 4.79vw, 4.688rem);
+}
+.tab-content .shop-item {
+  box-sizing: border-box;
+  padding: 20px 20px 50px;
+  background: #E1EDE6;
+}
+.tab-content .shop-item img {
+  width: 100%;
+}
+.tab-content .shop-item h2 {
+  color: #2C2D35;
+  font-size: clamp(1.563rem, 1.007rem + 0.87vw, 1.875rem);
+  margin: 10px 0;
+}
+.tab-content .shop-item h3 {
+  color: #86928B;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.tab-content .shop-item p {
+  color: #2C2D35;
+  font-size: clamp(1rem, 0.778rem + 0.35vw, 1.125rem);
+  line-height: 1;
+  margin: 10px 0 30px;
+}
+.tab-content .shop-item span {
+  color: #598D66;
+  font-size: 24px;
+  line-height: 1;
+}
+.tab-content .shop-item button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 20px 0;
+}
+
+#tab-btn-1:checked ~ #content-1,
+#tab-btn-2:checked ~ #content-2,
+#tab-btn-3:checked ~ #content-3 {
+  display: grid;
+}
+
+.news {
+  margin-top: 70px;
+  background-image: url("../img/pic_background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3em 0;
+}
+.news h2, .news p {
+  color: #FFF;
+  margin-bottom: 20px;
+}
+.news h2 {
+  margin-bottom: 20px;
+}
+.news .news-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.news button {
+  background: #EEDB6D;
+  padding: 20px 60px;
+  border: none;
+  color: #2C2D35;
+}
+.news button:hover {
+  background: #FAEB97;
+  transition: 0.2s;
+}
+
+.team {
+  margin: 140px 0;
+}
+
+.team-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team-block .art img {
+  width: clamp(21.875rem, 15.921rem + 13.21vw, 27.813rem);
+}
+.team-block .team-members {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 80px);
+}
+.team-block .team-content {
+  margin: 60px 0 0 30px;
+}
+.team-block h2 {
+  margin-bottom: 20px;
+}
+.team-block p {
+  margin-bottom: 30px;
+}
+
+footer {
+  background-color: #E1EDE6;
+  padding: 23px 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-content-src p, .footer-content-shop p, .footer-content-news p, .footer-content-team p {
+  margin: 0;
+  line-height: 2;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 50%;
+}
+.footer-content .footer-content-logo img {
+  margin-bottom: 35px;
+}
+
+.footer-src {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 10%;
+}
+.footer-src p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 2;
+}
