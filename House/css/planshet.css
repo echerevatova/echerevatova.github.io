@@ -1,4 +1,9 @@
-@media (max-width: 720px) {
+@media (max-width: 1440px) {
+  .container {
+    padding: 0 clamp(1.875rem, -17.301rem + 30.68vw, 10.313rem);
+  }
+}
+@media (max-width: 860px) {
   .header .menu {
     display: flex;
     justify-content: space-between;
