@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-  padding: 0 clamp(1.875rem, -9.345rem + 26.02vw, 21.875rem);
+  padding: 0 clamp(10.313rem, -24.375rem + 38.54vw, 21.875rem);
 }
 
 h1 {
@@ -132,8 +132,17 @@ button:hover {
   bottom: 50%;
   transform: rotate(45deg) translate(0, 50%);
 }
-.header .menu .shopping-cart {
+.header .menu .mobile-shopping-cart {
   display: none;
+}
+.header .menu button {
+  border: none;
+  padding: 0;
+}
+.header .menu button:hover {
+  cursor: pointer;
+  background: none;
+  color: #F4F6F5;
 }
 
 .main-content {
@@ -258,7 +267,6 @@ button:hover {
 }
 .news button {
   background: #EEDB6D;
-  padding: 20px 60px;
   border: none;
   color: #2C2D35;
 }
