@@ -1,0 +1,335 @@
+//Общие настройки
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway.ttf");
+}
+body {
+  background-color: #191411;
+  font-family: 'Raleway', sans-serif;
+  color: #2C2D35;
+  background: #F4F6F5;
+}
+.container {
+  padding: 0 clamp(10.313rem, -24.375rem + 38.54vw, 21.875rem);
+}
+h1 {
+  font-size: clamp(2.25rem, 1.427rem + 2.58vw, 3.75rem);
+  font-weight: 500;
+  line-height: 100%;
+}
+.h1-green {
+  display: inline-block;
+  color: #598D66;
+}
+h2 {
+  color: #2C2D35;
+  font-size: clamp(1.5rem, 0.952rem + 1.72vw, 2.5rem);
+  font-weight: 500;
+}
+p {
+  color: #86928B;
+  font-size: clamp(1rem, 0.931rem + 0.22vw, 1.125rem);
+  font-weight: 500;
+  line-height: 150%;
+  margin: clamp(0.625rem, -1.089rem + 5.38vw, 3.75rem) 0;
+}
+a {
+  text-decoration: none;
+  color: #2C2D35;
+  font-size: 20px;
+  font-weight: 500;
+}
+button {
+  background: none;
+  border: 1px solid #598D66;
+  color: #598D66;
+  font-size: clamp(1.125rem, 1.056rem + 0.22vw, 1.25rem);
+  padding: clamp(0.625rem, 0.282rem + 1.08vw, 1.25rem) clamp(1.875rem, 0.847rem + 3.23vw, 3.75rem);
+}
+button:hover {
+  cursor: pointer;
+  background: #598D66;
+  color: #F4F6F5;
+  transition: 0.2s;
+}
+
+//Меню
+.header {
+  background-color: #E1EDE6;
+  padding: 33px 0;
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      margin-right: 60px;
+    }
+    a:hover {
+      color: #376B44;
+      transition: 0.2s;
+    }
+    svg:hover {
+      cursor: pointer;
+      path{
+        stroke: #376B44;
+        transition: 0.2s;
+      } 
+    }
+    .open {
+      display: flex !important;
+    }
+    .burger {
+      display: none;
+      position: relative;
+      z-index: 50;
+      align-items: center;
+      justify-content: flex-end;
+      width: 30px;
+      height: 18px;
+      span {
+        height: 2px;
+        width: 100%;
+        transform: scale(1);
+        background-color: #191411;
+      }
+    }
+    .burger::before, .burger::after {
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      background-color: #191411;
+      transition: all 0.3s ease 0s;
+    }
+    .burger::before {
+      top: 0;
+    }
+    .burger::after {
+      bottom: 0;
+    }
+    .burger.active {
+      span {
+        transform: scale(0);
+      }
+    }
+    .burger.active::before {
+      top: 50%;
+      transform: rotate(-45deg) translate(0, -50%);
+    }
+    .burger.active::after {
+      bottom: 50%;
+      transform: rotate(45deg) translate(0, 50%);
+    }
+    .mobile-shopping-cart {
+      display: none;
+    }
+    button {
+      border: none;
+      padding: 0;
+    }
+    button:hover {
+      cursor: pointer;
+      background: none;
+      color: #F4F6F5;
+    }
+  }
+}
+//Главный экран
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 69px;
+}
+.bird {
+  img {
+    width: clamp(12.188rem, 0.363rem + 37.1vw, 33.75rem);
+    height: clamp(14.938rem, 1.845rem + 41.08vw, 38.813rem);
+  }
+}
+
+// Магазин
+.shop-header {
+  margin-right: auto;
+}
+.tab {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tab > label {
+  display: block;
+  padding: 10px 20px;
+  border: 2px solid #D4E8D9;
+  cursor: pointer;
+  background: #D4E8D9;
+  border-radius: 20px;
+  color: #2C2D35;
+  font-size: clamp(1.125rem, 1.056rem + 0.22vw, 1.25rem);
+  font-weight: 500;
+  margin-left: 28px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+.tab > input[type="radio"]:checked + label {
+  border: 2px solid #598D66;  
+  background: #D4E8D9;
+}
+.tab > input[type="radio"]:hover + label {
+  border-radius: 20px;
+  background: #598D66;
+  color: #F4F6F5;
+  transition: 0.2s;
+  border: 2px solid #598D66;
+}
+.tab > input[type="radio"] {
+  display: none;
+  }
+.tab-content {
+  display: none;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: clamp(1.875rem, -1.057rem + 4.79vw, 4.688rem);
+  .shop-item {
+    box-sizing: border-box;
+    padding: 20px 20px 50px;
+    background: #E1EDE6;
+    img {
+      width: 100%;
+    }
+    h2 {
+      color: #2C2D35;
+      font-size: clamp(1.563rem, 1.007rem + 0.87vw, 1.875rem);
+      margin: 10px 0;
+    }
+    h3 {
+      color: #86928B;
+      font-size: 18px;
+      font-weight: 500;
+      margin-top: 20px;
+    }
+    p {
+      color: #2C2D35;
+      font-size: clamp(1rem, 0.778rem + 0.35vw, 1.125rem);
+      line-height: 1;
+      margin: 10px 0 30px;
+    }
+    span {
+      color: #598D66;
+      font-size: 24px;
+      line-height: 1;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 20px 0;
+    }
+  }
+  }
+#tab-btn-1:checked~#content-1,
+#tab-btn-2:checked~#content-2,
+#tab-btn-3:checked~#content-3 {
+  display: grid;
+}
+
+//Новости
+.news {
+  margin-top: 70px;
+  background-image: url("../img/pic_background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3em 0;
+  h2, p {
+    color: #FFF;
+    margin-bottom: 20px;
+  }
+  h2 {
+    margin-bottom: 20px;
+  }
+  .news-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  button {
+    background: #EEDB6D;
+    border: none;
+    color: #2C2D35;
+  }
+  button:hover {
+    background: #FAEB97;
+    transition: 0.2s;
+  }
+}
+
+// Наша команда
+.team {
+  margin: 140px 0;
+}
+.team-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .art {
+    img {
+      width: clamp(21.875rem, 15.921rem + 13.21vw, 27.813rem);
+    }
+  }
+  .team-members {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3,80px);
+  }
+  .team-content {
+    margin: 60px 0 0 30px;
+  }
+  h2 {
+    margin-bottom: 20px;
+  }
+  p {
+    margin-bottom: 30px;
+  }
+}
+
+//Подвал
+footer {
+  background-color: #E1EDE6;
+  padding: 23px 0;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer-content-src, .footer-content-shop, .footer-content-news, .footer-content-team {
+  p {
+    margin: 0;
+    line-height: 2;
+  }
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 50%;
+  .footer-content-logo {
+    img {
+      margin-bottom: 35px;
+    }
+  }
+}
+.footer-src {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 10%;
+  p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 2;
+  }
+}
