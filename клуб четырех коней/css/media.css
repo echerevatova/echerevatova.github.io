@@ -3,7 +3,7 @@
     padding: 0 clamp(1.25rem, 0.02rem + 5.25vw, 4.5rem);
   }
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 450px) {
   h1, h2 {
     font-size: 36px;
   }
