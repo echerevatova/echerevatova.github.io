@@ -74,14 +74,12 @@ const infiniteScroll = () => {
 
 
 const autoPlay = () => {
-    if(window.innerWidth < 800 || !isAutoPlay) return; // Return если окно меньше 800 или isAutoPlay имеет значение false
     // Автоматическое воспроизведение карусели через каждые 4000 мс
     timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 4000);
 }
 autoPlay();
 
 const autoPlayPagination = () => {
-    if(window.innerWidth < 800 || !isAutoPlay) return; // Return если окно меньше 800 или isAutoPlay имеет значение false
     // Автоматическое воспроизведение карусели через каждые 4000 мс
     timeoutPagination = setTimeout(() => {
             newCurPage = newCurPage + 1;
