@@ -484,7 +484,7 @@ footer p {
   font-weight: 500;
 }
 
-@media ((min-width: 1920px)) {
+@media (min-width: 1920px) {
   .container {
     padding-inline: 340px;
   }
