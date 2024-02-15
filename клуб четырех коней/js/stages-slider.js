@@ -6,7 +6,7 @@ const stagesPagination = document.querySelectorAll(".circle");
 let countCircle = 0;
 
 
-if (document.documentElement.clientWidth <= 400) {
+if (document.documentElement.clientWidth <= 430) {
 const mobileBtn = document.querySelector(".slider-btn");
 mobileBtn.remove();
 document.querySelector(".mobile-buttons").append(mobileBtn);
