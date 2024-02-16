@@ -35,14 +35,31 @@
     }
 }
 
+@media (min-width: 1400px) {
+  .container {
+    padding-inline: clamp(4.5rem, -36.801rem + 48.38vw, 21.25rem);
+  }
+  @keyframes ticker {
+    from {
+      transform: translateX(85%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+}
+
 @media (max-width: 1366px) {
     .container {
-        padding: 0 clamp(1.25rem, -0.347rem + 5.68vw, 4.5rem);
+      padding-inline: 72px;
       }
 }
 
 
 @media (max-width: 450px) {
+  .container {
+    padding-inline: 20px;
+    }
     h1, h2 {
       font-size: 36px;
       line-height: 110%;

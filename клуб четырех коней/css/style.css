@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  padding: 0 clamp(4.5rem, -38.188rem + 50vw, 21.813rem);
+  padding-inline: 72px;
 }
 
 h1 {
@@ -447,19 +447,4 @@ footer p {
   font-family: "Golos Text";
   font-size: 16px;
   font-weight: 500;
-}
-
-@media (min-width: 1920px) {
-  .container {
-    padding-inline: 340px;
-  }
-  .stages a {
-    left: 650px;
-    top: 1955px;
-  }
-}
-@media screen and (max-width: 900px) {
-  .wrapper .carousel {
-    grid-auto-columns: calc(50% - 9px);
-  }
 }
