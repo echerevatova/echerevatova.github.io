@@ -1,0 +1,248 @@
+@media (hover: hover) {
+  .more:hover {
+    transition: 0.2s;
+    background-color: rgb(48, 87, 162);
+  }
+  .more:hover a {
+    color: rgb(255, 255, 255);
+  }
+  .btn:hover {
+    transition: 0.2s;
+    background: rgb(31, 31, 31);
+  }
+  .btn:hover a {
+    color: rgb(255, 255, 255);
+  }
+  .black-btn:hover {
+    transition: 0.2s;
+    background: rgb(251, 206, 81);
+    border: rgb(251, 206, 81);
+  }
+  .black-btn:hover a {
+    color: rgb(31, 31, 31);
+  }
+  button:hover {
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  button.left:hover, button.prev:hover {
+    background-image: url(../img/leftYellow.png);
+  }
+  button.right:hover, button.next:hover {
+    background-image: url(../img/rightYellow.png);
+  }
+}
+@media (max-width: 1366px) {
+  .container {
+    padding: 0 clamp(1.25rem, -0.347rem + 5.68vw, 4.5rem);
+  }
+}
+@media (max-width: 450px) {
+  h1, h2 {
+    font-size: 36px;
+    line-height: 110%;
+  }
+  h3, span, pre {
+    font-size: 28px;
+  }
+  h4 {
+    font-size: 24px;
+  }
+  a {
+    font-size: 16px;
+  }
+  .preview {
+    background-image: url(../img/mobileMain.png);
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(100vh - 38px);
+  }
+  .preview .header {
+    padding-top: 18px;
+  }
+  .preview .header img {
+    height: 32px;
+    width: auto;
+  }
+  .content {
+    margin-top: 38px;
+    width: 100%;
+    padding-bottom: 167px;
+  }
+  .content p {
+    text-align: left;
+    margin-top: 23px;
+  }
+  .black-btn, .btn {
+    padding: 12px 0;
+    width: 100%;
+    display: block;
+    margin-block: 32px 0;
+  }
+  .btn {
+    background: rgb(255, 255, 255);
+    opacity: 0.9;
+    border: none;
+    margin-block: 14px 130px;
+  }
+  .ticker-wrapper {
+    padding: 10px 12px;
+    height: 38px;
+  }
+  .ticker-item {
+    font-size: 16px;
+  }
+  .support {
+    margin-top: 48px;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-areas: "first" "second" "fifth" "third" "fourth" "sixth" "seventh" "eighth" "ninth";
+  }
+  .support .third, .support .fifth, .support .sixth {
+    padding-top: 24px;
+  }
+  .support .fifth, .support .sixth {
+    width: 100%;
+  }
+  .support .seventh {
+    padding: 24px 0 0;
+  }
+  .support .eighth {
+    margin: 44px 0 0;
+  }
+  .support .ninth {
+    margin: 40px 0;
+  }
+  .support a {
+    font-size: 18px;
+  }
+  .table {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "td-1 td-1" "td-2 td-2" "td-3 td-3" "td-4 td-4" "td-7 td-6" "td-5 td-5" "td-8 td-8" "td-9 td-9" "td-10 td-10";
+  }
+  .td-1, .td-3, .td-5, .td-9 {
+    padding: 16px 0;
+    border-bottom: none;
+    border-right: none;
+  }
+  .td-2, .td-4, .td-6, .td-8, .td-10 {
+    padding-block: 16px;
+    border-bottom: 2px solid rgb(208, 208, 208);
+    padding-left: 0;
+  }
+  .td-7 {
+    border-right: none;
+  }
+  .td-1, .td-2 {
+    padding-top: 0;
+  }
+  .td-9, .td-10 {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  .td-4, .td-8 {
+    padding-top: 0;
+  }
+  .stages {
+    margin-top: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .stages header a {
+    font-size: 18px;
+    margin-top: 12px;
+    width: 100%;
+  }
+  .stages .plane {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 190px;
+    width: 335px;
+  }
+  .stages-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+  }
+  .stages-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    padding-inline: 16px;
+  }
+  .circle {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: rgb(217, 217, 217);
+    border-radius: 50%;
+  }
+  .active {
+    background: rgb(49, 49, 49);
+  }
+  .stages-slider {
+    width: 335px;
+    margin-top: 148px;
+    display: grid;
+    grid-template-columns: repeat(5, 335px);
+    grid-template-areas: "one three four six seven" "one three five six seven" "two three five six seven" "two three five six seven";
+    gap: 0;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  .stages-slider .stage {
+    scroll-snap-align: start;
+  }
+  .stages-slider p {
+    font-size: 18px;
+  }
+  .stages-slider::-webkit-scrollbar {
+    display: none;
+  }
+  .stages-slider.no-transition {
+    scroll-behavior: auto;
+  }
+  .one, .three, .four, .six, .seven {
+    display: flex;
+    align-items: flex-start;
+    padding: 62px 20px 0;
+    background: url(../img/bggrid.png);
+  }
+  .three, .six, .seven {
+    height: 300px;
+  }
+  .two {
+    padding-top: 11px;
+  }
+  .five {
+    padding-block: 23px 0;
+  }
+  .participants {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-block: 120px 100px;
+  }
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+  .wrapper .carousel .card {
+    padding-inline: 24px;
+  }
+  .wrapper .carousel .card img {
+    height: 244px;
+    margin-bottom: 28px;
+  }
+  .mobile-buttons {
+    margin-top: 40px;
+  }
+}
