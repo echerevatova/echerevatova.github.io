@@ -196,7 +196,7 @@ button {
 }
 .support .eighth {
   grid-area: eighth;
-  margin: 30px 0 0 17px;
+  margin: 60px 0 0 17px;
 }
 .support .ninth {
   grid-area: ninth;
@@ -222,6 +222,7 @@ button {
   padding: 16px 0;
   border-bottom: 2px solid rgb(208, 208, 208);
   border-right: 2px solid rgb(208, 208, 208);
+  line-height: 1;
 }
 
 .td-2, .td-4, .td-6, .td-8, .td-10 {
@@ -280,7 +281,7 @@ button {
 
 .stages {
   position: relative;
-  margin-top: 163px;
+  margin-top: 190px;
 }
 .stages header {
   display: flex;
@@ -355,7 +356,7 @@ button {
 }
 
 .participants {
-  margin-block: 200px 135px;
+  margin-block: 200px 140px;
 }
 .participants .header {
   display: flex;
