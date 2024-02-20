@@ -5,13 +5,14 @@ const stagesPagination = document.querySelectorAll(".circle");
 
 let countCircle = 0;
 
-if (document.documentElement.clientWidth <= 450) {
-
-    // перенесем кнопки раздела "этаапы преображения васюков" под слайдер
-    const mobileBtn = document.querySelector(".slider-btn");
-    mobileBtn.remove();
-    document.querySelector(".mobile-buttons").append(mobileBtn);
-}
+ // перенесем кнопки раздела "этаапы преображения васюков" под слайдер
+ window.addEventListener('resize', function() {
+    if (document.documentElement.clientWidth <= 450) {
+        const mobileBtn = document.querySelector(".slider-btn");
+        mobileBtn.remove();
+        document.querySelector(".mobile-buttons").append(mobileBtn);
+    }
+  });
 
 // Добавим прослушиватель событий для кнопок со стрелками для прокрутки влево и вправо и обновление нумерации
 arrow.forEach(btn => {
