@@ -4,13 +4,19 @@ const firstCardWidth = carousel.querySelector(".card").offsetWidth;
 const arrowBtns = document.querySelectorAll(".slide-button");
 const carouselChildrens = [...carousel.children];
 
-
-if (document.documentElement.clientWidth >= 1366) {
+if (document.documentElement.clientWidth >= 1030) {
     var countScrollCards = 3;
     var newCurPage = 3;
     var counter = 3;
     var limiter = 9;
     var timer = 700;
+}
+if (document.documentElement.clientWidth <= 950) {
+    var countScrollCards = 2;
+    var newCurPage = 2;
+    var counter = 2;
+    var limiter = 8;
+    var timer = 500;
 }
 if (document.documentElement.clientWidth <= 450) {
     var countScrollCards = 1;
@@ -19,6 +25,7 @@ if (document.documentElement.clientWidth <= 450) {
     var limiter = 7;
     var timer = 500;
 }
+
 var countPages = 6;
 var newPagination = newCurPage + ' / ' + countPages;
 var divPagination = document.querySelector(".pagination");
