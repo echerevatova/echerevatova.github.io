@@ -1,10 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500&family=Merriweather:wght@400;700&display=swap");
-.maket {
-  position: absolute;
-  z-index: 1000;
-  opacity: 0.6;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -196,10 +190,11 @@ button {
 }
 .support .sixth {
   grid-area: sixth;
+  margin-left: -27px;
 }
 .support .seventh {
   grid-area: seventh;
-  padding: 64px 0 0 17px;
+  padding: 64px 20px 0 17px;
 }
 .support .eighth {
   grid-area: eighth;
@@ -385,7 +380,6 @@ button {
 }
 
 .wrapper {
-  max-width: 1222px;
   width: 100%;
   position: relative;
   margin-top: 60px;
@@ -393,10 +387,10 @@ button {
 
 .carousel {
   display: grid;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
+  -moz-column-gap: 5%;
+       column-gap: 5%;
   grid-auto-flow: column;
-  grid-auto-columns: 394px;
+  grid-auto-columns: 30%;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
