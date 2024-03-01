@@ -6,11 +6,18 @@ const stagesPagination = document.querySelectorAll(".circle");
 let countCircle = 0;
 
  // перенесем кнопки раздела "этаапы преображения васюков" под слайдер
+const transferringButtons = () => {
+    const mobileBtn = document.querySelector(".slider-btn");
+    mobileBtn.remove();
+    document.querySelector(".mobile-buttons").append(mobileBtn);
+};
+if (document.documentElement.clientWidth <= 450) {
+    transferringButtons();
+}
+
  window.addEventListener('resize', function() {
     if (document.documentElement.clientWidth <= 450) {
-        const mobileBtn = document.querySelector(".slider-btn");
-        mobileBtn.remove();
-        document.querySelector(".mobile-buttons").append(mobileBtn);
+        transferringButtons();
     }
   });
 
