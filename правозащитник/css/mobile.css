@@ -1,0 +1,186 @@
+.burger {
+  display: none;
+  position: relative;
+  z-index: 50;
+  align-items: center;
+  justify-content: flex-end;
+  width: 18px;
+  height: 18px;
+}
+.burger span {
+  height: 2px;
+  width: 70%;
+  transform: scale(1);
+  background-color: #ffffff;
+}
+
+.burger::before, .burger::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #ffffff;
+  transition: all 0.3s ease 0s;
+}
+
+.burger::before {
+  top: 0;
+}
+
+.burger::after {
+  bottom: 0;
+}
+
+.burger.active span {
+  transform: scale(0);
+}
+
+.burger.active::before {
+  top: 50%;
+  transform: rotate(-45deg) translate(0, -50%);
+}
+
+.burger.active::after {
+  bottom: 50%;
+  transform: rotate(45deg) translate(0, 50%);
+}
+
+nav.open {
+  width: 230px;
+  padding-inline: 40px;
+}
+nav.open a {
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  .list-services {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  .law-firm img {
+    display: none;
+  }
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 26px;
+  }
+  .links {
+    display: none;
+  }
+}
+@media (max-width: 1100px) {
+  .burger {
+    display: flex;
+  }
+  .main-content {
+    position: relative;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+    position: absolute;
+    height: 100vh;
+    width: 0;
+    top: 0;
+    right: 0;
+    z-index: 50;
+    padding-block: 200px;
+    background-color: rgb(34, 34, 34);
+    transition: all 0.3s ease;
+  }
+  nav a {
+    display: none;
+  }
+  .feedback-card .feather {
+    display: none;
+  }
+  .main-content {
+    height: calc(100vh - 145px);
+  }
+}
+@media (max-width: 920px) {
+  .container {
+    padding-inline: clamp(1.5rem, -0.097rem + 5.11vw, 4.375rem);
+  }
+  .feedback-card {
+    justify-content: center;
+  }
+  .feedback-card img {
+    padding-inline: 50px;
+  }
+  .feedback-card p {
+    text-align: left;
+  }
+  .name {
+    margin-left: 0;
+  }
+  .name h5, .name p {
+    text-align: center;
+  }
+}
+@media (max-width: 810px) {
+  .mobile-none {
+    display: none;
+  }
+  .footer-content {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+  }
+}
+@media (max-width: 530px) {
+  .law-firm {
+    text-align: center;
+  }
+  .law-firm button {
+    display: block;
+    margin-top: 16px;
+    margin-inline: auto;
+  }
+  .list-services {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 24px 38px;
+    margin-top: 48px;
+    overflow-x: auto;
+    scroll-snap-type: x;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  .block-services {
+    width: 250px;
+    padding: 24px 16px;
+  }
+  .block-services p {
+    display: none;
+  }
+  .svg {
+    margin: 0 50px 17px;
+  }
+  .feedback button {
+    display: block;
+    margin-top: 16px;
+    margin-inline: auto;
+  }
+  .feedback-slider {
+    grid-auto-columns: 100%;
+  }
+  .feedback-card {
+    justify-content: flex-start;
+  }
+  .feedback-card img {
+    padding-inline: 0 24px;
+  }
+  .feedback-card h5, .feedback-card p {
+    text-align: left;
+  }
+  .arrows {
+    display: none;
+  }
+  button.mobile-none {
+    display: none;
+  }
+}
