@@ -6,6 +6,7 @@ const stagesPagination = document.querySelectorAll(".circle");
 let countCircle = 0;
 
  // перенесем кнопки раздела "этаапы преображения васюков" под слайдер
+
 const transferringButtons = () => {
     const mobileBtn = document.querySelector(".slider-btn");
     mobileBtn.remove();
