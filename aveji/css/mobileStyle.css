@@ -135,6 +135,16 @@
   }
   .form__application-input {
     width: 100%;
+    height: 80px;
+    font-size: 44px;
+  }
+  .form__application-button {
+    padding: 44px 60px;
+    font-size: 44px;
+  }
+  .form__link img {
+    height: 80px;
+    width: auto;
   }
   .footer {
     margin-top: 60px;
