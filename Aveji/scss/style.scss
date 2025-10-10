@@ -9,7 +9,7 @@ body {
   background-color:  #F4F6F5;
   font-family: 'Roboto', sans-serif;
   color: #212529;
-  padding: 16px 32px;
+  padding: 16px clamp(2rem, -43rem + 50vw, 17rem);
 }
 section, footer {
     margin-top: 120px;
@@ -306,4 +306,5 @@ a:hover {
     grid-template-columns: repeat(3, auto);
     justify-content: space-between;
     align-items: end;
+
 }
