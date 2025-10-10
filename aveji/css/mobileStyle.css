@@ -111,7 +111,7 @@
     justify-items: center;
   }
   .feedback__comments-item h4 {
-    max-width: 100%;
+    width: 100%;
   }
   .form {
     display: grid;
