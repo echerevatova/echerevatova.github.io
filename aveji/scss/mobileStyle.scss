@@ -30,14 +30,17 @@
 		position: fixed;
 		top: 0;
 		right: -100%;
-		width: 30vw;
-		height: 300px;
+		width: 35vw;
+		height: 400px;
 		transition: right 0.5s;
 		z-index: 1000;
 		gap: 15px;
         align-items: flex-end;
-		padding: 60px 35px 20px 0;
+		padding: 100px 35px 20px 0;
         background-color: #E8EBEB;
+        a {
+            font-size: 32px;
+        }
 	}
     .header__menu-link--active {
         display: block;
