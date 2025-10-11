@@ -18,13 +18,13 @@ h1 {
     font-family: Helvetica;
     font-size: clamp(2rem, 0.864rem + 4.85vw, 4.5rem);
     font-weight: 400;
-    line-height: 5.38rem;
+    line-height: 1.2;
     text-align: left;
     text-transform: uppercase;
 }
 h2 {
     font-family: Helvetica;
-    font-size: 3rem;
+    font-size: clamp(1.75rem, -9.5rem + 16.67vw, 3rem);
     font-weight: 400;
     text-align: left;
 }
@@ -294,8 +294,8 @@ a:hover {
 
 .form__link {
     img {
-        height: 40px; /* фиксированная высота */
-        width: auto; /* ширина пропорциональна */
+        height: 40px;
+        width: auto;
         display: block;
     }
 }
